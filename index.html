@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header-text">
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizza in town</h2>
+            </div>
+        </header>
+        <main>
+            <section id="menu"></section>
+            <section id="your-order">
+                <h2>Your order</h2>
+                <div class='your-items'> </div>
+                <div class='your-total'><h3>Your Price</h3> <h3 id="total-price"></h3></div>
+                <button id="checkout-btn" data-checkout='checkout'>Complete Order</div>
+            </section>
+            <section id='modal' class="hidden" >
+            <h2>Enter Card Details</h2>
+            <div>
+            <form id="input--div">
+            <input required type='text' name='name' placeholder="Enter your name"></input>
+            <input required type='text' name='creditCard' placeholder="Enter your credit card"></input>
+            <input required type='text' name='CVV' placeholder="Enter CVV"></input>
+            <button type="submit" data-pay='this is not important'>Pay</button>
+            </form>
+            </div>
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
